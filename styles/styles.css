@@ -1,29 +1,17 @@
-@font-face {font-family: "PT sans", "Arial", sans-serif;
-  src: url(".../fonts/ptsans-400.woff2") format ("woff2");
+@font-face {font-family: "PT sans";
+  src: url("../fonts/ptsans-400.woff2") format ("woff2");
   font-weight: 400;
   font-style: normal;
   font-display:swap;
 }
 
-@font-face {font-family: "PT sans", "Arial", sans-serif;
-  src: url (".../fonts/ptsans-700.woff2") format ("woff2");
+@font-face {font-family: "PT sans";
+  src: url ("../fonts/ptsans-700.woff2") format ("woff2");
   font-weight: 700;
   font-style: normal;
   font-display:swap;
 }
-@font-face {font-family: "PT sans", "Arial", sans-serif;
-  src: url(".../fonts/ptsans-400.woff2") format ("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display:swap;
-}
 
-@font-face {font-family: "PT sans", "Arial", sans-serif;
-  src: url (".../fonts/ptsans-700.woff2") format ("woff2");
-  font-weight: 700;
-  font-style: italic;
-  font-display:swap;
-}
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -174,7 +162,7 @@ background-position:center;}
         line-height: 24px;
       text-transform:capitalize;}
 
-        .catalog-filter-title {text-transform: uppercase;
+        .catalog-filter-title {
       font-family: "PT Sans"; "Arial", sans-serif;
           font-style: normal;
           font-weight: 700;
