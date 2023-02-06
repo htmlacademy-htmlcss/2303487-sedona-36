@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT sans";
-  src: url("../fonts/ptsans-400.woff2") format ("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "PT sans";
-  src: url("../fonts/ptsans-700.woff2") format ("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -17,14 +17,14 @@
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 21px;
   color: #333333;
   font-style: normal;
   background-color: #f2f2f2;
 }
 
-.button {
+.button {font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -36,31 +36,74 @@ body {
 }
 
 .button-subscribe {
-  background-color: #82b3d3;
+  background-color: #82b3d3
+  font-family: "PT Sans"; "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;;
 }
 
 .button-reset {
-  background-color: inherit;
+  background-color: transparent;
+  font-family: "PT Sans"; "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  border:none;
 }
 
 .button-add-to-favorites {
   background-color: #82b3d3;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-added-to-favorites {
   background-color: #7db54f;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .navigation-button {
   text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .page-footer .button {
   background-color: #82b3d3;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
+.select-control {font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;}
+
+input {font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;}
+
 .page-header {
-  background-color: #ffffff;
   color: #000000;
 }
 
@@ -75,7 +118,6 @@ body {
   font-size: 20px;
   font-style: normal;
   line-height: 24px;
-  text-transform: capitalize;
 }
 
 .navigation-link {
@@ -85,8 +127,7 @@ body {
 
 .hero {
   background-image: url("../images/index-background.jpg");
-  color: #000000;
-  background-color: #ffffff;
+  background-color: #82b3d3;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,7 +156,7 @@ body {
   text-align: center;
 }
 
-.advantages-1-5 {
+.advantages-dark-blue {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -126,7 +167,7 @@ body {
   list-style: none;
 }
 
-.advantages-2-4 {
+.advantages-light-blue{
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -136,7 +177,7 @@ body {
   text-align: center;
 }
 
-.advantages-3 {
+.advantages-just-blue {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -292,4 +333,18 @@ body {
 
 .pagination-disabled {
   background-color: #ffffff;
+}
+
+.wrapper {background-color: #ffffff;
+width:"1200px";}
+
+.main-footer-phone {color:#000000;
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration:none;
+text-transform: uppercase;
 }
