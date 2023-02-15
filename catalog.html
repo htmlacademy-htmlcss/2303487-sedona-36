@@ -9,26 +9,26 @@
 
   <body>
     <div class="wrapper">
-    <header class="page-header">
-      <a class="sedona-logo" href="index.html"><img class="navigation-logo" src="images/sedona-logo.svg" width="140" height="70"
-          alt="Логотип Седоны."></a>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
-          <li class="navigation-item"><a class="navigation-link navigation-link-current"
-              href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><a class="navigation-link" href="#"><span
-                class="visually-hidden">Поиск.</span></a></li>
-          <li class="navigation-item"><a class="navigation-link" href="#"><span
-                class="visually-hidden">Избранное.</span></a></li>
-          <li class="navigation-item"><a class="button" href="#">Хочу сюда</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-catalog">
+      <header class="page-header">
+        <nav class="navigation">
+          <a class="sedona-logo" href="index.html"><img class="navigation-logo" src="images/sedona-logo.svg" width="140" height="70"
+            alt="Логотип Седоны."></a>
+          <ul class="navigation-list">
+            <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item"><a class="navigation-link" href="#">О Седоне</a></li>
+            <li class="navigation-item"><a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a></li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item"><a class="navigation-link" href="#"><span
+                  class="visually-hidden">Поиск.</span></a></li>
+            <li class="navigation-item"><a class="navigation-link" href="#"><span
+                  class="visually-hidden">Избранное.</span></a></li>
+            <li class="navigation-item"><button class="button navigation-button"><a class="button-link" href="#">Хочу сюда</a></button></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="main-catalog main-container">
       <section class="catalog-filter-form">
           <h1 class="catalog-filter-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
@@ -93,15 +93,16 @@
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button-little" href="#">
+        <button class="sorting-button"><a class="button-little" href="#">
           <span class="visually-hidden">Мелкие значки</span>
-        </a>
-        <a class="button-big" href="#">
+        </a></button>
+        <button class="sorting-button"><a class="button-big" href="#">
           <span class="visually-hidden">Крупные значки</span>
-        </a>
-        <a class="button-list" href="#">
+        </a></button>
+        <button class="sorting-button"><a class="button-list" href="#">
           <span class="visually-hidden">Список</span>
-        </a>
+        </a></button></section>
+        <section class="hotels">
         <ul class="hotels-list">
           <li class="hotels-card">
             <a class="hotels-card-link" href="hotels.html"></a>
@@ -110,7 +111,7 @@
             <h3 class="hotels-card-title">Amara Resort & Spa</h3>
             <p>Гостиница</p>
             <p>От 4000Р</p>
-            <a class="hotels-card-button button" href="#">Подробнее</a>
+            <button class="hotels-card-button button"><a class="button-link" href="#">Подробнее</a></button>
             <button class="button button-add-to-favorites" type="submit">В избранное</button>
             <div class="rating">
               <span class="rating-star visually-hidden">4 звезды</span>
@@ -125,7 +126,7 @@
 
             <p>Гостиница</p>
             <p>От 5000Р</p>
-            <a class="hotels-card-button button" href="#">Подробнее</a>
+            <button class="button hotels-card-button"><a class="button-link" href="#">Подробнее</a></button>
             <button class="button button-added-to-favorites" type="submit">В избранном</button>
             <div class="rating">
               <span class="rating-star visually-hidden">4 звезды</span>
@@ -141,7 +142,7 @@
             <p>Гостиница</p>
             <p>От 2500Р</p>
 
-            <a class="hotels-card-button button" href="#">Подробнее</a>
+            <button class="hotels-card-button button"><a class="button-link" href="#">Подробнее</a></button>
             <button class="button button-add-to-favorites" type="submit">В избранное</button>
             <div class="rating">
               <span class="rating-star visually-hidden">3 звезды</span>
@@ -156,7 +157,7 @@
 
             <p>Гостиница</p>
             <p>От 1500Р</p>
-          <li><a class="hotels-card-button button" href="#">Подробнее</a>
+          <li><button class="hotels-card-button button"><a class="button-link" href="#">Подробнее</a></button>
             <button class="button button-add-to-favorites" type="submit">В избранное</button>
             <div class="rating">
               <span class="rating-star visually-hidden">2 звезды</span>
@@ -190,9 +191,7 @@
         <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
         <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden">Ваш e-mail</label>
-          <input id="email" type="email" name="user-email" placeholder="Ваш e-mail" required>
-          <label for="email">Ваш e-mail</label>
+          <input class="field" type="email" name="user-email" placeholder="Ваш e-mail" required>
           <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
