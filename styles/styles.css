@@ -84,7 +84,7 @@ body {
 }
 
 .button:disabled {
-  background: #E5E5E5;
+  background: #e5e5e5;
   color: #ffffff;
 }
 
@@ -120,12 +120,12 @@ body {
 }
 
 .button-reset:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.2;
 }
 
 .button-reset:disabled {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.1;
 }
 
