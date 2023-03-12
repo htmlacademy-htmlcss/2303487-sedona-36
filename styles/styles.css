@@ -232,6 +232,10 @@ body {
   background-color: #756157;
 }
 
+.hotels-card-button :disabled {
+  background: #e5e5e5;
+}
+
 .navigation-button {
   padding: 8px 34px;
 }
@@ -351,6 +355,12 @@ body {
 .navigation-link-heart:focus,
 .navigation-link-search:focus {
   background-color: #a0a0a0;
+}
+
+.navigation-link:disabled,
+.navigation-link-heart:disabled,
+.navigation-link-search:disabled {
+  background-color: #a0a0a065;
 }
 
 .navigation-link-active::before {
@@ -818,6 +828,11 @@ body {
   padding-left: 20px;
 }
 
+.subscribe-field:hover,
+.subscribe-field:hover {
+  background-color: #e6e6e6;
+}
+
 
 .subscribe-catalog {
   color: #000000;
@@ -935,10 +950,10 @@ body {
 }
 
 .breadcrumbs-link-home {
-  position: relative;
+  position: absolute;
 }
 
-.breadcrumbs-link-home::before {
+.breadcrumbs-link::after{
   padding: 13px;
   background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat;
@@ -953,7 +968,7 @@ body {
 
 
 .breadcrumbs-link-home:focus-visible:before {
-  border: 3px solid #83b3d3
+  color: #ffffff;
 }
 
 
@@ -1084,6 +1099,18 @@ body {
   border: none;
 }
 
+.toggle-max:hover,
+.toggle-min:hover {opacity: 0.3}
+
+.toggle-max:active,
+.toggle-min:active {border: 2px solid #83b3d3;}
+
+.toggle-max:focus-visible,
+.toggle-min:focus-visible {border: 2px solid #a0a0a0;}
+
+.toggle-max:disabled,
+.toggle-min:disabled {border: 2px solid #a0a0a065;}
+
 .label-options-input[type="radio"] {
   border-radius: 50%;
 }
@@ -1126,24 +1153,6 @@ input::-webkit-inner-spin-button {
   border-radius: 50%;
 }
 
-.control-mark:hover,
-.control-mark-radio:hover,
-.control-input-text:hover {
-  opacity: 0.3;
-}
-
-.control-mark:focus-visible,
-.control-mark-radio:focus-visible {
-  border: 3px solid #83b3d3;
-  border-radius: 4px;
-}
-
-.control-mark:active,
-.control-mark-radio:active,
-.control-input-text:active {
-  opacity: 0.4;
-}
-
 .control-input-text {
   font-weight: 400;
   font-size: 18px;
@@ -1152,10 +1161,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+
 .label-options-input[type="checkbox"]:checked + .control-mark::before,
 .label-options-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  background-image: url(../images/icons/check.svg);
+  background-image: url("../images/icons/check.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -1173,6 +1183,38 @@ input::-webkit-inner-spin-button {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.label-options-input:hover + .control-mark,
+.label-options-input:hover + .control-input-text {
+  opacity: 0.3;
+}
+
+.label-options-input:focus-visible + .control-mark,
+.label-options-input:focus-visible + .control-input-text {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.label-options-input:active + .control-mark,
+.label-options-input:active + .control-input-text {
+  opacity: 0.4;
+}
+
+.label-options-input:hover + .control-mark-radio,
+.label-options-input:hover + .control-input-text {
+  opacity: 0.3;
+}
+
+.label-options-input:focus-visible + .control-mark-radio,
+.label-options-input:focus-visible + .control-input-text {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.label-options-input:active + .control-mark-radio,
+.label-options-input:active + .control-input-text {
+  opacity: 0.4;
 }
 
 .range-from-field-text-from {
@@ -1208,13 +1250,13 @@ input::-webkit-inner-spin-button {
 
 .range-from-field-text-from:hover,
 .range-from-field-text-to:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .range-from-field-text-from:focus-visible,
 .range-from-field-text-to:focus-visible {
-  background: #E6E6E6;
-  border: 3px solid #83b3d3;
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
   border-radius: 4px 0 0 4px;
 }
 
@@ -1303,6 +1345,39 @@ input::-webkit-inner-spin-button {
   border: 1px solid #68a2ca;
 }
 
+.sorting-button:active {
+  border: 2px solid #68a2ca;
+}
+
+.sorting-button:disabled {
+  border: 2px solid #a3a3a3;
+}
+
+
+.select-control {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  min-width: 292px;
+  height: 49px;
+  margin-right: 70px;
+  border-color: #e5e5e5;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/icons/select-stroke.svg");
+  background-repeat: no-repeat;
+  background-position: top 18px right 18px;
+  padding-left: 18px;
+  padding-right: 40px;
+
+}
+
+
 .select-control:hover {
   border: 2px solid #68a2ca;
   border-radius: 4px;
@@ -1317,21 +1392,11 @@ input::-webkit-inner-spin-button {
   border: 2px solid #68a2ca;
 }
 
-.select-control {
-  color: #000000;
-  background-color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  width: 292px;
-  min-height: 49px;
-  margin-right: 70px;
-  border-color: #e5e5e5;
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-
 }
+
 
 .hotels-list {
   display: grid;
@@ -1634,6 +1699,8 @@ input::-webkit-inner-spin-button {
   padding-left: 20px;
 }
 
+
+
 .modal-input-people {
   background-color: #f2f2f2;
   border: none;
@@ -1768,7 +1835,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .input-container::before {
   content: '';
-  background-image: url(../images/icons/calendar.svg);
+  background-image: url("../images/icons/calendar.svg");
   position: absolute;
   right: 22px;
   top: 50%;
@@ -1843,7 +1910,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .tooltip-text::before {
   content: '';
-  background-image: url(../images/icons/dark-triangle.svg);
+  background-image: url("../images/icons/dark-triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1855,6 +1922,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-item {
   height: 48px;
+}
+
+.modal-input-people {
+  -moz-appearance: textfield;
 }
 
 /*Модальное окно - состояния*/
@@ -1927,3 +1998,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   outline: none;
 }
+
+.modal-input:hover {background-color: #e6e6e6;}
+
+.modal-input-people:hover {background-color: #e6e6e6;}
