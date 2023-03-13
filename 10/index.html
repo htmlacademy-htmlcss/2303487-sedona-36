@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Сайт города Седона</title>
@@ -165,7 +164,7 @@
     <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
           <svg class="close-button" width="15" height="15" viewBox="0 0 15 15" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -198,14 +197,14 @@
                 <div class="adults">
                   <label class="input-title adult-title" for="adults">Взрослые:</label>
                   <div class="counter-container">
-                    <button class="people-minus" type="button">
+                    <button class="people-minus" type="button"><span class="visually-hidden">Меньше людей.</span>
                       <svg class="minus-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 2L14 2V0L0 0Z" />
                       </svg>
                     </button>
                     <input class="modal-input-people" type="number" value="2" name="adults" id="adults">
-                    <button class="people-plus" type="button">
+                    <button class="people-plus" type="button"><span class="visually-hidden">Больше людей.</span>
                       <svg class="plus-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
@@ -216,23 +215,24 @@
                 <div class="child">
                   <span class="input-title child-title">
                     <label class="input-title child-title" for="child">Дети:</label>
-                    <span class="tooltip"><button class="tooltip-toggle" type="button" aria-labelledbye
-                        by="tooltip-label"><svg class="i-icon" width="2" height="12" viewBox="0 0 2 12" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
+                    <span class="tooltip"><button class="tooltip-toggle" type="button"
+                        aria-labelledby="tooltip-label"><svg class="i-icon" width="2" height="12" viewBox="0 0 2 12"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                         </svg></button>
-                      <span class="tooltip-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых
-                        от 6 до 18 лет.&nbsp Дети<br> до 6 лет размещаются<br> бесплатно.
+                      <span class="tooltip-text" id="tooltip-label" role="tooltip">Укажите количество детей,<br> которые
+                        будут с вами, возраст<br> которых
+                        от 6 до 18 лет.&nbsp;Дети<br> до 6 лет размещаются<br> бесплатно.
                       </span></span></span>
                   <div class="counter-container">
-                    <button class="people-minus">
+                    <button class="people-minus"><span class="visually-hidden">Меньше людей.</span>
                       <svg class="minus-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 2L14 2V0L0 0Z" />
                       </svg>
                     </button>
                     <input class="modal-input-people" type="number" value="2" name="child" id="child">
-                    <button class="people-plus" type="submit">
+                    <button class="people-plus" type="submit"><span class="visually-hidden">Больше людей.</span>
                       <svg class="plus-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
@@ -247,7 +247,5 @@
         </form>
       </div>
     </div>
-    </div>
   </body>
-
 </html>
