@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.png">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -78,7 +80,7 @@
                 <span class="control-input-text">Апартаменты</span></label>
             </fieldset>
             <fieldset class="filter">
-              <legend class="filter-legend-title">Стоимость, ₽:</legend>
+              <legend class="filter-legend-title filter-legend-title-pay">Стоимость, ₽:</legend>
               <div class="input-range-numbers">
                 <label class="range-from-field">
                   <input class="range-from-field-text-from" type="number" name="start-price" value="0">
@@ -131,7 +133,7 @@
               </a>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 4000Р</p>
-              <a class="button button-link" href="#">Подробнее</a>
+              <a class="button button-link-more" href="#">Подробнее</a>
               <button class="button button-add-to-favorites" type="submit">В избранное</button>
               <div class="rating-stars stars4">
                 <span class="rating-star visually-hidden">4 звезды</span>
@@ -148,7 +150,7 @@
               </a>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 5000Р</p>
-              <a class="button button-link" href="#">Подробнее</a>
+              <a class="button button-link-more" href="#">Подробнее</a>
               <button class="button button-added-to-favorites" type="submit">В избранном</button>
               <div class="rating-stars stars4">
                 <span class="rating-star visually-hidden">4 звезды</span>
@@ -164,7 +166,7 @@
               </a>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 2500Р</p>
-              <a class="button button-link" href="#">Подробнее</a>
+              <a class="button button-link-more" href="#">Подробнее</a>
               <button class="button button-add-to-favorites" type="submit">В избранное</button>
               <div class="rating-stars stars3">
                 <span class="rating-star visually-hidden">3 звезды</span>
@@ -180,7 +182,7 @@
               </a>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 1500Р</p>
-              <a class="button button-link" href="#">Подробнее</a>
+              <a class="button button-link-more" href="#">Подробнее</a>
               <button class="button button-add-to-favorites" type="submit">В избранное</button>
               <div class="rating-stars stars2">
                 <span class="rating-star visually-hidden">2 звезды</span>
@@ -191,7 +193,7 @@
         </section>
         <ol class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -212,8 +214,9 @@
           <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
           <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-field" type="email" name="user-email" placeholder="Ваш e-mail" required>
-            <button class="button button-subscribe" type="submit">Подписаться</button>
+            <input class="subscribe-field subscribe-field-catalog" type="email" name="user-email"
+              placeholder="Ваш e-mail" required>
+            <button class="button button-subscribe button-subscribe-catalog" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
